@@ -28,10 +28,37 @@ target/
 dbt_modules/
 dbt_packages/
 logs/
+.user.yml
 
 # DuckDB
 *.duckdb
 *.duckdb.wal
+
+# Snowflake
+snowflake_credentials.json
+*.snowsql.log
+.snowsql/
+*_snowflake.yml
+*_snowflake.yaml
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb
+
+# Environment variables and secrets
+.env
+.env.*
+.secrets
+secrets.yaml
+secrets.yml
+credentials.json
+*_creds.*
 
 # OS specific
 .DS_Store
@@ -47,3 +74,17 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+*.sublime-*
+.project
+.pydevproject
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+.cache/
